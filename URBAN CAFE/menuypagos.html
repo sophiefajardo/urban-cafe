@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU Y PAGOS</title>
+    <link rel="stylesheet" href="menuypagos.css">
+</head>
+<body>
+    
+    <header class="header">
+
+        <div class="menu container">
+            
+            <a href="#" class="logo">MENU</a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="#" class="menu-icon" alt="">
+            </label>
+            <nav class="navbar">
+        
+                <ul>
+                    <li><a href="inicio.html">INICIO</a></li>
+                    <li><a href="locacion.html">LOCACION</a></li>
+                    <li><a href="menuypagos.html">MENU Y PAGOS</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                    <li><a href="formulario.html">FORMULARIO</a></li>
+                    <li><a href="agradecimiento.html">AGRADECIMIENTO</a></li>
+                </ul>
+        
+        
+            </nav>
+            
+        
+        </div>
+        <div class="header-content container">
+            <div class="header-txt">
+                <span>      </span>
+        
+            </div>
+            <div class="header-img">
+           
+                <center>
+                <h2>ㅤㅤㅤ</h2>
+                <h2>ㅤㅤㅤ</h2>
+                <h2>ㅤㅤㅤ</h2>
+                <h2>ㅤㅤㅤ</h2>
+                <h2>ㅤㅤㅤ</h2>
+                    
+                    <img src="imagenes/MENU.png" width="640" > </center>
+
+            </div>
+        
+        </div>
+
+        <script>
+            let total = 0;
+            function anadirProducto() {
+              let precio = document.getElementById("precio").value;
+              precio = parseFloat(precio);
+            
+              if (isNaN(precio)) {
+                alert("Introduce un precio válido.");
+                return;
+              }
+            
+              total += precio;
+            
+              document.getElementById("total").innerHTML = "Total: $" + total.toFixed(2);
+            }
+        </script>
+        <center>
+            <h1
+            style="
+        color: rgb(60, 27, 1);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 40px;
+        "
+        
+            >Suma de productos</h1>
+            <p
+            style="
+        color: rgb(0, 0, 0);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 25px;
+        "
+            >Introduce el precio de cada producto y pulsa el botón "Añadir" para sumarlos:</p>
+            <input type="number" id="precio">
+            <button id="boton-anadir" onclick="anadirProducto()">Añadir</button>
+            <p id="total"
+            style="
+        color: rgb(0, 0, 0);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 40px;
+        "
+            >Total: $0</p>
+            <script src="script.js"></script>
+            <h2>ㅤㅤㅤ</h2>
+            <h2>ㅤㅤㅤ</h2>
+            <h2>ㅤㅤㅤ</h2>
+            <h2>ㅤㅤㅤ</h2>
+            <h2>ㅤㅤㅤ</h2>
+        
+        </center>
+
+
+
+
+        
+</body>
+</html>
